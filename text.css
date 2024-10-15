@@ -1,0 +1,142 @@
+header {
+  position: fixed;
+}
+
+main {
+  top: 4rem;
+  background-color: ghostwhite;
+}
+
+.container {
+  display: flex;
+  weight: 100vw;
+  height: 100vh;
+}
+
+.column {
+  top: 5rem;
+  margin: 1rem;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.column {
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.column::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+p {
+  font-family: "Gothic A1", sans-serif;
+
+  font-style: normal;
+}
+
+span {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.left {
+  width: 65%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  word-break: keep-all;
+  padding: 5rem 2rem 2rem 0rem;
+}
+
+.right {
+  width: 35%;
+  padding: 5rem 0rem 2rem 0rem;
+  line-height: 1.5;
+}
+
+.text-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.text-date {
+  font-size: 1.1rem;
+  font-weight: w00;
+}
+
+.tag-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-family: monospace;
+  border: 10rem sold black;
+  border-radius: 0.2 rem;
+  padding: 0.3rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 34rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+/* Style for the individual letters */
+.circle-container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 12rem; /* Adjust to the radius of the circle */
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Positioning each letter at different angles */
+.letter1 {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+.letter2 {
+  transform: rotate(30deg) translate(-50%, -50%);
+}
+.letter3 {
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+.letter4 {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+.letter5 {
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+.letter6 {
+  transform: rotate(150deg) translate(-50%, -50%);
+}
+.letter7 {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+.letter8 {
+  transform: rotate(210deg) translate(-50%, -50%);
+}
+.letter9 {
+  transform: rotate(240deg) translate(-50%, -50%);
+}
+.letter10 {
+  transform: rotate(270deg) translate(-50%, -50%);
+}
+.letter11 {
+  transform: rotate(300deg) translate(-50%, -50%);
+}
+.letter12 {
+  transform: rotate(330deg) translate(-50%, -50%);
+}
+
+.dotted-line {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  border-top: 2px dotted black; /* Dotted line with 2px thickness */
+  width: 10rem;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
